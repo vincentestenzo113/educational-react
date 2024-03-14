@@ -1,8 +1,5 @@
 import React from 'react';
-import { Link, Outlet } from 'react-router-dom';
-import CourseContent from './CourseContent';
-import Quizzes from './Quizzes';
-import DiscussionForums from './DiscussionForums';
+import { Link } from 'react-router-dom';
 
 const Dashboard = () => {
     return (
@@ -10,14 +7,14 @@ const Dashboard = () => {
             <div className="sidebar">
                 <h2>Sidebar</h2>
                 <ul>
-                    <li><Link to="/CourseContent">Course Content</Link></li>
-                    <li><Link to="/Quizzes">Quizzes</Link></li>
-                    <li><Link to="/DiscussionForums">Discussion Forums</Link></li>
+                    <li><Link to="/course-content">Course Content</Link></li>
+                    <li><Link to="/quizzes">Quizzes</Link></li>
+                    <li><Link to="/discussion-forums">Discussion Forums</Link></li>
                 </ul>
             </div>
             <div className="content">
                 <h2>Dashboard Content</h2>
-                <Outlet />
+                {'ANYONGHASEYO'}
             </div>
         </div>
     );
