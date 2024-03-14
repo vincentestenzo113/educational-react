@@ -1,13 +1,91 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Dashboard.css */
+.dashboard {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.sidebar {
+  width: 200px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h2 {
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #333;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+}
+
+.sidebar li a {
+  text-decoration: none;
+  color: #555;
+  font-size: 16px;
+}
+
+.sidebar li a:hover {
+  color: #007bff;
+}
+
+.content {
+  flex-grow: 1;
+  margin-left: 20px;
+}
+
+.content h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* CourseContent.js, Quizzes.js, DiscussionForums.js */
+.course-content,.discussion-forums {
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.course-content h2, .discussion-forums h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.course-content p, .discussion-forums p {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+
+.quizzes ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.quizzes li {
+  margin-bottom: 10px;
+}
+
+.quizzes li a {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.quizzes li a:hover {
+  text-decoration: underline;
 }
