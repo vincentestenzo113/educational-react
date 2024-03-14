@@ -6,14 +6,11 @@ const Login = () => {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        // Add your authentication logic here
-        // For demo purposes, let's assume authentication is successful
-        // Redirect to the dashboard
         navigate('/dashboard');
     };
 
     return (
-        <div>
+        <div className='login'>
             <h2>Login</h2>
             <form onSubmit={handleSubmit}>
                 <input type="text" placeholder="Username" />
@@ -22,6 +19,7 @@ const Login = () => {
             </form>
             <p>Don't have an account? <Link to="/signup">Sign up</Link></p>
         </div>
+     
     );
 };
 
