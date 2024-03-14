@@ -14,7 +14,7 @@ const Dashboard = () => {
             </div>
             <div className="content">
                 <h2>Dashboard Content</h2>
-                {'ANYONGHASEYO'}
+                {'Afix'}
             </div>
         </div>
     );
