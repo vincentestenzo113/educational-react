@@ -11,7 +11,7 @@ const Signup = () => {
         console.log('Email:', email);
         console.log('Password:', password);
         // Redirect to login page after signup
-        navigate('/login'); // Use navigate function to redirect
+        navigate('/Login'); // Use navigate function to redirect
     };
 
     return (
