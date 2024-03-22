@@ -1,0 +1,74 @@
+.HomePage {
+  background-image: url('../public/Background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  width: 100%;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #FFFF;
+    height: 8vh;
+  }
+
+  .navbar .Logo {
+    flex-grow: 1;
+    border: 1px solid black;
+    background-color: black;
+  }
+
+  .navbar .center {
+    flex-grow: 9;
+    border: 1px solid black;
+  }
+
+  .navbar .Home {
+    flex-grow: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    background-color: #13A8B1;
+  }
+
+  .HomeLoginButton {
+    position: inherit;
+    font-size: 2rem;
+    height: 7vh;
+    width: 20vh;
+    border-radius: 200px;
+  }
+
+  .HomepageContainer {
+    position: absolute;
+    align-self: center;
+    height: 60vh;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    flex-direction: row;
+  }
+
+  .HomepageConatiner2 {
+    position: relative;
+    flex-grow: 4;
+    margin: 2vh;
+    background-color: #13A8B1;
+    display: flex;
+    justify-content: center;
+    border-radius: 30px;
+    flex-direction: column;
+  }
+
+  .HomepageConatiner2 h1 {
+    position: absolute;
+    top: 0;
+    align-self: center;
+    justify-self: center;
+  }
