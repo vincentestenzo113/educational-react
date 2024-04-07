@@ -6,11 +6,7 @@ const Dashboard = () => {
         <div className="dashboard">
             <div className="sidebar">
                 <h2>Sidebar</h2>
-                <ul>
-                    <li><Link to="/course-content">Course Content</Link></li>
-                    <li><Link to="/quizzes">Quizzes</Link></li>
-                    <li><Link to="/discussion-forums">Discussion Forums</Link></li>
-                </ul>
+                <div><Link to="/CourseList">Course List</Link></div>
             </div>
             <div className="content">
                 <h2>Dashboard Content</h2>

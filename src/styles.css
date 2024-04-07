@@ -1,11 +1,42 @@
+/*
+Colors:
+  474eca - blue
+  13A8B1 - secondary blue
+  FFFF  - white
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffff; /* Set background color */
+  font-family: Arial, sans-serif; /* Set font family */
+  overflow-x: hidden; /* Hide horizontal overflow */
+}
+
 .HomePage {
-  background-image: url('../public/Background.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
+  position: relative; /* Position relative to contain pseudo-element */
   height: 100vh;
   display: flex;
   width: 100%;
-  }
+}
+
+.HomePage::before {
+  content: ''; /* Create a pseudo-element to overlay the blurred background */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/public/Background.jpg'); /* Relative path to the image */
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: blur(10px); /* Apply the blur effect */
+  z-index: -1; /* Push the pseudo-element below other content */
+}
 
   .navbar {
     display: flex;
@@ -14,22 +45,21 @@
     top: 0;
     width: 100%;
     background-color: #FFFF;
-    height: 8vh;
+    height: 41px;
   }
 
   .navbar .Logo {
-    flex-grow: 1;
     border: 1px solid black;
     background-color: black;
   }
 
   .navbar .center {
-    flex-grow: 9;
+    flex-grow: 12;
     border: 1px solid black;
   }
 
   .navbar .Home {
-    flex-grow: 2;
+    flex-grow: 1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,8 +69,8 @@
 
   .HomeLoginButton {
     position: inherit;
-    font-size: 2rem;
-    height: 7vh;
+    font-size: 20px;
+    height: 35px;
     width: 20vh;
     border-radius: 200px;
   }
@@ -50,9 +80,14 @@
     align-self: center;
     height: 60vh;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: white;
+    border: 1px solid gray;
     display: flex;
     flex-direction: row;
+    backdrop-filter: blur(10px); /* Adjust the blur amount as needed */
+    -webkit-backdrop-filter: blur(10px); /* For Safari */
+    background-color: rgba(255, 255, 255, 0.5); /* Adjust transparency as needed */
+    z-index: 1; /* Ensure the overlay appears above the background */
   }
 
   .HomepageConatiner2 {
@@ -72,3 +107,11 @@
     align-self: center;
     justify-self: center;
   }
+
+  .TitleName {
+    display: flex;
+    justify-content: center; /* Horizontally center the content */
+    align-items: flex-start; /* Align content to the top */
+    width: 100%; /* Occupy full width */
+    height: 50px; /* Set the height to your desired value */
+}

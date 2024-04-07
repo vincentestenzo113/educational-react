@@ -21,8 +21,9 @@ const Login = () => {
                     </div>
                 </div>
 
-                <div>
-                    
+                <div className='TitleName'>
+                    {/*<img src='/Logo.png' alt='Title'/>*/}
+                    <h1>LearnIT</h1>
                 </div>
 
 
